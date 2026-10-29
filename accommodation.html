@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover Lesotho tourism, destinations, accommodation, activities and travel information.">
+  <title>Accommodation | Discover Lesotho</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">LESOTHO<span> • TOURISM</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link " href="destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link active" href="accommodation.html">Accommodation</a></li>
+        <li class="nav-item"><a class="nav-link " href="activities.html">Activities</a></li>
+        <li class="nav-item"><a class="nav-link " href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link " href="contact.html">Contact / Booking</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<header class="page-banner">
+  <div class="container">
+    <p class="eyebrow">Rest and recharge</p>
+    <h1>Accommodation</h1>
+    <p class="lead mb-0">Choose a comfortable base for exploring the Kingdom in the Sky, from city stays to peaceful highland retreats.</p></div></header>
+<main class="section-pad">
+  <div class="container">
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-4">
+      <article class="card place-card">
+        <img src="Photos/Avani.webp" alt="Comfortable hotel beside a swimming pool" loading="lazy">
+        <div class="card-body">
+          <span class="pill">Comfort</span>
+          <h2 class="card-title h5 mt-3">Avani Hotel Maseru,Lesotho</h2>
+          <p>A practical choice for travellers who want private rooms, convenient services and a relaxing place to return to after sightseeing.</p><a class="btn btn-outline-success" href="contact.html">Ask about a stay</a></div></article></div>
+    <div class="col-md-6 col-lg-4">
+      <article class="card place-card">
+        <img src="Photos/images (13).jpg" alt="Small guest house surrounded by greenery" loading="lazy">
+        <div class="card-body">
+          <span class="pill">Local welcome</span>
+          <h2 class="card-title h5 mt-3">Aloes guest house Leribe,Pitseng</h2>
+          <p>Enjoy a more personal stay and the opportunity to learn about local food, customs and places to visit.</p>
+          <a class="btn btn-outline-success" href="contact.html">Ask about a stay</a></div></article></div>
+    <div class="col-md-6 col-lg-4">
+      <article class="card place-card">
+        <img src="Photos/images (14).jpg" alt="Rustic lodge room with warm natural materials" loading="lazy"><div class="card-body"><span class="pill">Nature</span><h2 class="card-title h5 mt-3">Mountain lodges and camps</h2><p>Consider a nature-focused stay if you plan to hike, take photographs or spend time in the highlands.</p><a class="btn btn-outline-success" href="contact.html">Ask about a stay</a></div></article></div>
+  </div>
+  <section class="mt-5 info-panel"><h2 class="section-title h3">Before you book</h2><div class="row g-3 mt-1">
+    <div class="col-md-6"><p class="mb-1 fw-bold">Confirm the essentials</p><p class="text-secondary mb-0">Ask about dates, room type, total cost, meals, cancellation rules and transport.</p></div>
+    <div class="col-md-6"><p class="mb-1 fw-bold">Plan for the location</p><p class="text-secondary mb-0">Check road access, mobile coverage, nearby shops and how far your accommodation is from attractions.</p></div>
+  </div></section>
+  <div class="text-center mt-5"><h2 class="section-title h3">Need help planning?</h2><p class="text-secondary">Send an enquiry using our contact and booking form.</p><a href="contact.html" class="btn btn-gold btn-lg">Go to booking enquiry</a></div>
+</div></main>
+
+
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-7">
+        <h5 class="fw-bold">Discover Lesotho</h5>
+        <p class="small-muted mb-0">Explore mountain landscapes, Basotho culture, outdoor adventures and welcoming places to stay.</p>
+      </div>
+      <div class="col-md-5 text-md-end">
+        <p class="mb-1"><a href="destinations.html">Destinations</a> · <a href="activities.html">Activities</a> · <a href="contact.html">Contact</a></p>
+        <p class="small-muted small mb-0">© <span data-year></span> Your Guide to Exploring Lesotho</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-secondary">
+        <h5 class="modal-title" id="galleryModalLabel">Photo preview</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="galleryPreview" class="img-fluid rounded" src="" alt="">
+        <p id="galleryCaption" class="mt-3 mb-0"></p>
+      </div>
+      <div class="modal-footer border-secondary justify-content-between">
+        <button type="button" class="btn btn-outline-light" id="galleryPrev">Previous</button>
+        <button type="button" class="btn btn-gold" id="galleryNext">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

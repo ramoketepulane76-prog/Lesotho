@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover Lesotho tourism, destinations, accommodation, activities and travel information.">
+  <title>Contact and Booking | Discover Lesotho</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">LESOTHO<span> • TOURISM</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link " href="destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link " href="accommodation.html">Accommodation</a></li>
+        <li class="nav-item"><a class="nav-link " href="activities.html">Activities</a></li>
+        <li class="nav-item"><a class="nav-link " href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact / Booking</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="page-banner">
+  <div class="container">
+    <p class="eyebrow">Start planning</p>
+    <h1>Contact us</h1>
+    <p class="lead mb-0">Tell us a little about your trip and we will get back to you with ideas, availability and answers to your questions.</p>
+  </div>
+</header>
+
+<main class="section-pad">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <p class="eyebrow">Get in touch</p>
+        <h2 class="section-title display-6">Let's plan your Lesotho experience.</h2>
+        <p class="section-lead">Call or email us directly, or send an enquiry with the form and we will reply as soon as we can.</p>
+
+        <ul class="contact-list list-unstyled mt-4">
+          <li>
+            <div>
+              <strong>Location</strong>
+              <span>Maseru, Lesotho</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+26663411217">+266 6341 1217</a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:ramoketepulane76@gmail.com">ramoketepulane76@gmail.com</a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Opening hours</strong>
+              <span>Monday to Friday, 8:00 AM – 6:00 PM</span>
+            </div>
+          </li>
+        </ul>
+
+        <div class="info-panel mt-4">
+          <h3 class="h5 card-title">Helpful details to include</h3>
+          <ul class="mb-0">
+            <li>Preferred travel dates</li>
+            <li>Number of visitors</li>
+            <li>Accommodation or activity interests</li>
+            <li>Any special questions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="form-panel">
+          <h2 class="section-title h3 mb-1">Send us an enquiry</h2>
+          <p class="text-secondary small mb-4">Fields marked * are required.</p>
+
+          <form id="bookingForm" novalidate>
+            <div class="mb-3">
+              <label class="form-label" for="fullName">Full name *</label>
+              <input class="form-control" id="fullName" name="fullName" type="text" autocomplete="name" minlength="2" required placeholder="Enter your full name">
+              <div class="invalid-feedback" id="fullNameError"></div>
+            </div>
+
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label class="form-label" for="email">Email address *</label>
+                <input class="form-control" id="email" name="email" type="email" autocomplete="email" required placeholder="name@example.com">
+                <div class="invalid-feedback" id="emailError"></div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label" for="phone">Phone / WhatsApp *</label>
+                <input class="form-control" id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+266 ...">
+                <div class="invalid-feedback" id="phoneError"></div>
+              </div>
+            </div>
+
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label class="form-label" for="country">Country of residence</label>
+                <input class="form-control" id="country" name="country" type="text" autocomplete="country-name" placeholder="e.g. South Africa">
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label" for="interest">I'm interested in *</label>
+                <select class="form-select" id="interest" name="interest" required>
+                  <option value="">Choose an option...</option>
+                  <option>Accommodation</option>
+                  <option>Tourist destinations</option>
+                  <option>Outdoor activities</option>
+                  <option>Culture and heritage</option>
+                  <option>General information</option>
+                </select>
+                <div class="invalid-feedback" id="interestError">Please choose an interest.</div>
+              </div>
+            </div>
+
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label class="form-label" for="travelDate">Preferred travel date</label>
+                <input class="form-control" id="travelDate" name="travelDate" type="date">
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label" for="visitors">Number of visitors *</label>
+                <input class="form-control" id="visitors" name="visitors" type="number" min="1" max="100" required placeholder="e.g. 2">
+                <div class="invalid-feedback" id="visitorsError"></div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for="message">Your message *</label>
+              <textarea class="form-control" id="message" name="message" rows="5" minlength="10" required placeholder="Tell us about your trip, questions or special requests..."></textarea>
+              <div class="invalid-feedback" id="messageError"></div>
+            </div>
+
+            <div class="form-check mb-4">
+              <input class="form-check-input" id="consent" name="consent" type="checkbox" required>
+              <label class="form-check-label" for="consent">I agree to be contacted about my enquiry. *</label>
+              <div class="invalid-feedback" id="consentError">Please tick this box to continue.</div>
+            </div>
+
+            <button class="btn btn-gold btn-lg w-100" type="submit">Send enquiry</button>
+            <div id="formMessage" class="alert d-none mt-3" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-7">
+        <h5 class="fw-bold">Discover Lesotho</h5>
+        <p class="small-muted mb-0">Explore mountain landscapes, Basotho culture, outdoor adventures and welcoming places to stay.</p>
+      </div>
+
+      <div class="col-md-5 text-md-end">
+        <p class="mb-1">
+          <a href="destinations.html">Destinations</a> ·
+          <a href="activities.html">Activities</a> ·
+          <a href="contact.html">Contact</a>
+        </p>
+        <p class="small-muted small mb-0">© <span data-year></span> Your Guide to Exploring Lesotho</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-secondary">
+        <h5 class="modal-title" id="galleryModalLabel">Photo preview</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="galleryPreview" class="img-fluid rounded" src="" alt="">
+        <p id="galleryCaption" class="mt-3 mb-0"></p>
+      </div>
+      <div class="modal-footer border-secondary justify-content-between">
+        <button type="button" class="btn btn-outline-light" id="galleryPrev">Previous</button>
+        <button type="button" class="btn btn-gold" id="galleryNext">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

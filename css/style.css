@@ -1,0 +1,80 @@
+:root {
+  --mountain: #173f35;
+  --mountain-dark: #0d2d26;
+ 
+  --ink: #24312d;
+  --muted: #64716b;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--cream); color: var(--ink);
+  font-family: "Segoe UI", Arial, sans-serif; line-height: 1.65;
+}
+.navbar { background: var(--mountain-dark) !important; }
+.navbar-brand { font-weight: 800; letter-spacing: .3px; }
+.navbar-brand span { color: var(--sun); }
+.navbar .nav-link { color: rgba(255,255,255,.86) !important; font-weight: 600; }
+.navbar .nav-link:hover, .navbar .nav-link.active { color: var(--sun) !important; }
+.hero {
+  min-height: 68vh; display: flex; align-items: center; color: white;
+  background: linear-gradient(90deg, rgba(9,32,27,.83), rgba(9,32,27,.25)),
+  url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2000&q=85") center/cover;
+}
+.hero-content { max-width: 760px; padding-top: 5rem; padding-bottom: 5rem; }
+.hero h1 { font-size: clamp(2.5rem, 6vw, 5rem); font-weight: 850; line-height: 1.05; }
+.hero p { font-size: 1.15rem; max-width: 620px; color: #f5f4ef; }
+.eyebrow { text-transform: uppercase; letter-spacing: 2px; color: var(--sun); font-weight: 800; font-size: .8rem; }
+.btn-gold { background: var(--sun); border-color: var(--sun); color: #172b23; font-weight: 800; }
+.btn-gold:hover { background: #f0bd64; border-color: #f0bd64; color: #172b23; transform: translateY(-2px); }
+.btn-outline-light:hover { color: var(--mountain-dark); }
+.section-pad { padding: 4.5rem 0; }
+.section-title { font-weight: 850; color: var(--mountain-dark); letter-spacing: -.6px; }
+.section-lead { max-width: 720px; color: var(--muted); }
+.feature-card, .place-card {
+  border: 0; border-radius: 18px; overflow: hidden; height: 100%;
+  background: white; box-shadow: 0 10px 30px rgba(22, 48, 38, .09);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.feature-card:hover, .place-card:hover { transform: translateY(-6px); box-shadow: 0 18px 38px rgba(22, 48, 38, .16); }
+.feature-card img, .place-card img { height: 230px; width: 100%; object-fit: cover; }
+.card-body { padding: 1.35rem; }
+.card-title { color: var(--mountain); font-weight: 800; }
+.pill { display: inline-block; border-radius: 99px; background: #92b88d; color: var(--mountain); padding: .25rem .75rem; font-size: .8rem; font-weight: 700; }
+.stat-band { background: var(--mountain); color: white; }
+.stat-number { color: var(--sun); font-size: 2rem; font-weight: 850; }
+.page-banner {
+  color: white; padding: 5rem 0 4rem;
+  background: linear-gradient(90deg, rgba(9,32,27,.88), rgba(9,32,27,.48)),
+  url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=85") center/cover;
+}
+.page-banner h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 850; }
+.page-banner p { max-width: 700px; }
+.info-panel { background: white; border-radius: 18px; padding: 1.5rem; box-shadow: 0 8px 26px rgba(22,48,38,.07); }
+.gallery-image { cursor: pointer; width: 100%; height: 230px; object-fit: cover; border-radius: 14px; transition: transform .2s ease, filter .2s ease; }
+.gallery-image:hover { transform: scale(1.02); filter: brightness(.9); }
+.form-control, .form-select { padding: .75rem .85rem; border-radius: 10px; }
+.form-control:focus, .form-select:focus { border-color: var(--sun); box-shadow: 0 0 0 .2rem rgba(228,166,65,.2); }
+.form-panel { background: white; border-radius: 18px; padding: clamp(1.25rem, 3vw, 2.25rem); box-shadow: 0 10px 30px rgba(22,48,38,.09); }
+footer { background: var(--mountain-dark); color: #e8eee9; padding: 2.5rem 0; }
+footer a { color: var(--sun); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+footer .small-muted { color: #b7c7bf; }
+.accordion-button:not(.collapsed) { background: #eaf1e9; color: var(--mountain); }
+.accordion-button { font-weight: 700; }
+.notice { border-radius: 12px; }
+.breadcrumb a { color: var(--sun); }
+@media (max-width: 767.98px) {
+  .hero { min-height: 70vh; }
+  .section-pad { padding: 3rem 0; }
+  .feature-card img, .place-card img { height: 210px; }
+  .gallery-image { height: 190px; }
+}
+body{
+  background-image: linear-gradient(rgba(225,225,225,0.65),rgba(225,225,225,0.65))
+  ,url("Photos/images (6).jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
